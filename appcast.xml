@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>SoftMouse</title>
+        <item>
+            <title>0.1.4</title>
+            <pubDate>Thu, 10 Sep 2026 08:15:41 +0900</pubDate>
+            <sparkle:version>5</sparkle:version>
+            <sparkle:shortVersionString>0.1.4</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<!DOCTYPE html><html><head><meta charset="utf-8"></head><body style="font: 13px -apple-system"><h3>Soft Mouse 0.1.4</h3><ul><li>자동 업데이트 기능 추가: 메뉴 막대와 설정 › 정보에서 업데이트를 확인하고 바로 설치할 수 있습니다.</li><li>시스템 포인터 크기·색 설정으로 바로 가는 버튼 추가 (커서 효과 섹션)</li><li>커서 효과 6종(혜성 꼬리·반짝이·색종이·니모·치즈냥이·시바견), Shift+휠 가로 스크롤 수정</li></ul></body></html>]]></description>
+            <enclosure url="https://raw.githubusercontent.com/MFam/soft-mouse-releases/main/SoftMouse-0.1.4.dmg" length="3106235" type="application/octet-stream" sparkle:edSignature="Nw0zZXTX+P/B8+ljsjVeWxh9/KE+fqM3j4TkNlYNFSkEU35MM04cOX8jaNBVzGy560976PYnaX0IFcQalMDRAA=="/>
+        </item>
+    </channel>
+</rss>
