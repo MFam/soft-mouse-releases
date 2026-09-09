@@ -3,6 +3,18 @@
     <channel>
         <title>SoftMouse</title>
         <item>
+            <title>0.1.5</title>
+            <pubDate>Thu, 10 Sep 2026 08:43:04 +0900</pubDate>
+            <sparkle:version>6</sparkle:version>
+            <sparkle:shortVersionString>0.1.5</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<!DOCTYPE html><html><head><meta charset="utf-8"></head><body style="font: 13px -apple-system"><h3>Soft Mouse 0.1.5</h3><ul><li>설정에서 토글을 켜 항목이 펼쳐질 때 새로 나타난 항목까지 자동으로 스크롤됩니다.</li><li>자동 업데이트 동작 확인용 릴리스</li></ul></body></html>]]></description>
+            <enclosure url="https://raw.githubusercontent.com/MFam/soft-mouse-releases/main/SoftMouse-0.1.5.dmg" length="3110347" type="application/octet-stream" sparkle:edSignature="h3cDaTlF59qcnoqjXCHJ6Jj0doQtCvmmadOIzLw15+AcsZfEgL1xfV0DvRnGmN7OgM1t0G0F3M9/aIwMdXIlCw=="/>
+            <sparkle:deltas>
+                <enclosure url="https://raw.githubusercontent.com/MFam/soft-mouse-releases/main/SoftMouse6-5.delta" sparkle:deltaFrom="5" length="93566" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="PoOgXCv6PxdlhWI3urR5kp0SI2kA8qe/ezIMbdZ1N2sTnxOpKKf643PQ9JeOOvxaYNEUO+fmmLK+WxRYqX6ZBg=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.1.4</title>
             <pubDate>Thu, 10 Sep 2026 08:15:41 +0900</pubDate>
             <sparkle:version>5</sparkle:version>
