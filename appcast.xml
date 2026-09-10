@@ -3,6 +3,19 @@
     <channel>
         <title>SoftMouse</title>
         <item>
+            <title>0.1.7</title>
+            <pubDate>Thu, 10 Sep 2026 09:30:17 +0900</pubDate>
+            <sparkle:version>8</sparkle:version>
+            <sparkle:shortVersionString>0.1.7</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<!DOCTYPE html><html><head><meta charset="utf-8"></head><body style="font: 13px -apple-system"><h3>Soft Mouse 0.1.7</h3><ul><li>줄 단위로 스크롤하는 앱(Android Studio·IntelliJ 터미널 등)에서 휠 한 칸에 수십 줄이 움직이던 문제를 수정했습니다. 부드러운 스크롤 이벤트에 트랙패드와 같은 제스처 정보를 붙입니다.</li><li>새 <b>앱별 설정</b>: 앱마다 휠 스크롤 거리 배율을 정하거나 부드러운 스크롤을 끌 수 있습니다. Android Studio·IntelliJ가 설치되어 있으면 50% 규칙이 미리 추가됩니다.</li><li>부드러운 스크롤을 끈 상태에서 마우스 스크롤 반전이 동작하지 않던 문제를 수정했습니다.</li></ul></body></html>]]></description>
+            <enclosure url="https://raw.githubusercontent.com/MFam/soft-mouse-releases/main/SoftMouse-0.1.7.dmg" length="3174760" type="application/octet-stream" sparkle:edSignature="fKIJmtX+TRpF3SqqeWHALS/+K/0mvMShVzxiPEY/m7trdEsxefRhYVS+KTpScgFhX+qUu07gLejrRIGMaU/yCQ=="/>
+            <sparkle:deltas>
+                <enclosure url="https://raw.githubusercontent.com/MFam/soft-mouse-releases/main/SoftMouse8-6.delta" sparkle:deltaFrom="6" length="158630" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="uojd4/b3siWqNtf0lHfxANQ2EGEbGXjfmu/7AIndAGcLf6X6V3SaOb4iGB6UlRAKInha8rIPM4rRAopVQCxwAg=="/>
+                <enclosure url="https://raw.githubusercontent.com/MFam/soft-mouse-releases/main/SoftMouse8-5.delta" sparkle:deltaFrom="5" length="175690" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="9MtlA3zzfun5HJeH73rNVSOknv3Z2OyU600vw5yh40kCaDIadlZ6Ij/ly52xj88KRypg/2dokNtWo/hBDR7ACQ=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.1.5</title>
             <pubDate>Thu, 10 Sep 2026 08:43:04 +0900</pubDate>
             <sparkle:version>6</sparkle:version>
