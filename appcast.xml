@@ -3,6 +3,20 @@
     <channel>
         <title>SoftMouse</title>
         <item>
+            <title>0.1.8</title>
+            <pubDate>Thu, 10 Sep 2026 13:50:49 +0900</pubDate>
+            <sparkle:version>9</sparkle:version>
+            <sparkle:shortVersionString>0.1.8</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<!DOCTYPE html><html><head><meta charset="utf-8"></head><body style="font: 13px -apple-system"><h3>Soft Mouse 0.1.8</h3><ul><li><b>마우스별 설정</b>: 설정이 프로필(기본 프로필 + 추가 가능) 단위로 저장되고, 새 "마우스별 설정" 페이지에서 마우스마다 프로필을 배정할 수 있습니다. 블루투스·유선 마우스를 자동으로 인식합니다.</li><li>일반 페이지 상단에서 편집 중인 프로필을 고르고 추가·복제·이름 변경·다른 프로필 가져오기를 할 수 있습니다. 메뉴 막대에는 사용 중인 마우스와 프로필이 표시됩니다.</li><li>앱별 설정에 "이 앱에서 Soft Mouse 사용 안 함" 옵션을 추가했습니다.</li><li>기존 설정은 기본 프로필로 자동 이관됩니다.</li></ul></body></html>]]></description>
+            <enclosure url="https://raw.githubusercontent.com/MFam/soft-mouse-releases/main/SoftMouse-0.1.8.dmg" length="3299084" type="application/octet-stream" sparkle:edSignature="LfCKHUVUcdlQZJvwG+eutIsrFL8zsdZAqJbjHjJiTIffEku1f+2pjOSrGnXEFAIraeJWkQKqbEh4gkjxnBk1AA=="/>
+            <sparkle:deltas>
+                <enclosure url="https://raw.githubusercontent.com/MFam/soft-mouse-releases/main/SoftMouse9-8.delta" sparkle:deltaFrom="8" length="260486" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="76SW9/UPWbEohlwTLL5f2rekbxp63GCUKywJYy2/9REX33jlB6aoiff8YY0+QqUv1FVmF8rnKOGSpIwgZBx6AA=="/>
+                <enclosure url="https://raw.githubusercontent.com/MFam/soft-mouse-releases/main/SoftMouse9-6.delta" sparkle:deltaFrom="6" length="296954" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="sMfEaWsUymQQ3mD1IBjIVj/z1//O/l/X7TuJ2Ngyb4e5daWjHQfrY5BV+5Bmf+ES63swLmNY9/IJ6tqUTMKFDg=="/>
+                <enclosure url="https://raw.githubusercontent.com/MFam/soft-mouse-releases/main/SoftMouse9-5.delta" sparkle:deltaFrom="5" length="304770" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="FA6lFWEnpt+s0kUo8RHYSSXGlk9K8/Dk//QiN6kQiVCJ7rtRPLNVARiPF/v0ZSwBkjNk0Gdmr2rH+9uz2gVeCw=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.1.7</title>
             <pubDate>Thu, 10 Sep 2026 09:30:17 +0900</pubDate>
             <sparkle:version>8</sparkle:version>
@@ -26,15 +40,6 @@
             <sparkle:deltas>
                 <enclosure url="https://raw.githubusercontent.com/MFam/soft-mouse-releases/main/SoftMouse6-5.delta" sparkle:deltaFrom="5" length="93566" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="PoOgXCv6PxdlhWI3urR5kp0SI2kA8qe/ezIMbdZ1N2sTnxOpKKf643PQ9JeOOvxaYNEUO+fmmLK+WxRYqX6ZBg=="/>
             </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.1.4</title>
-            <pubDate>Thu, 10 Sep 2026 08:15:41 +0900</pubDate>
-            <sparkle:version>5</sparkle:version>
-            <sparkle:shortVersionString>0.1.4</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<!DOCTYPE html><html><head><meta charset="utf-8"></head><body style="font: 13px -apple-system"><h3>Soft Mouse 0.1.4</h3><ul><li>자동 업데이트 기능 추가: 메뉴 막대와 설정 › 정보에서 업데이트를 확인하고 바로 설치할 수 있습니다.</li><li>시스템 포인터 크기·색 설정으로 바로 가는 버튼 추가 (커서 효과 섹션)</li><li>커서 효과 6종(혜성 꼬리·반짝이·색종이·니모·치즈냥이·시바견), Shift+휠 가로 스크롤 수정</li></ul></body></html>]]></description>
-            <enclosure url="https://raw.githubusercontent.com/MFam/soft-mouse-releases/main/SoftMouse-0.1.4.dmg" length="3106235" type="application/octet-stream" sparkle:edSignature="Nw0zZXTX+P/B8+ljsjVeWxh9/KE+fqM3j4TkNlYNFSkEU35MM04cOX8jaNBVzGy560976PYnaX0IFcQalMDRAA=="/>
         </item>
     </channel>
 </rss>
