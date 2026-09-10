@@ -3,6 +3,19 @@
     <channel>
         <title>SoftMouse</title>
         <item>
+            <title>0.1.6</title>
+            <pubDate>Thu, 10 Sep 2026 09:09:07 +0900</pubDate>
+            <sparkle:version>7</sparkle:version>
+            <sparkle:shortVersionString>0.1.6</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<!DOCTYPE html><html><head><meta charset="utf-8"></head><body style="font: 13px -apple-system"><h3>Soft Mouse 0.1.6</h3><ul><li>줄 단위로 스크롤하는 앱(Android Studio·IntelliJ 터미널 등)에서 휠 한 칸에 수십 줄이 움직이던 문제를 수정했습니다. 이제 원래 마우스와 같은 줄 수만큼 움직입니다.</li></ul></body></html>]]></description>
+            <enclosure url="https://raw.githubusercontent.com/MFam/soft-mouse-releases/main/SoftMouse-0.1.6.dmg" length="3112702" type="application/octet-stream" sparkle:edSignature="4o80JanZvXWRjFyzpUbRslY9UsV0B1t9Dec+lC8DFgSJDCqnJ2/2MwTqIrZWO7EtpVe7QnFDqHbzy23JmZdPCw=="/>
+            <sparkle:deltas>
+                <enclosure url="https://raw.githubusercontent.com/MFam/soft-mouse-releases/main/SoftMouse7-6.delta" sparkle:deltaFrom="6" length="54642" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="zws6MQKOSuKEYct0/9unq9a6NMMUAR/Ikjkomoijxcy+2V9CAD73eEXhkj6AzalEzZ/SqWTwYv42CfEluEQPCA=="/>
+                <enclosure url="https://raw.githubusercontent.com/MFam/soft-mouse-releases/main/SoftMouse7-5.delta" sparkle:deltaFrom="5" length="96674" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="9pyYDeA4mzWqfGCzLGhLGrYSxq4N7beefeBCbyMLysbL3+lBgAXf8rD+reGQZXK91LVDBZtdEs7uur+DHsPUDA=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.1.5</title>
             <pubDate>Thu, 10 Sep 2026 08:43:04 +0900</pubDate>
             <sparkle:version>6</sparkle:version>
