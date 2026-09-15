@@ -3,6 +3,22 @@
     <channel>
         <title>SoftMouse</title>
         <item>
+            <title>0.1.11</title>
+            <pubDate>Tue, 15 Sep 2026 15:39:27 +0900</pubDate>
+            <sparkle:version>12</sparkle:version>
+            <sparkle:shortVersionString>0.1.11</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<!DOCTYPE html><html><head><meta charset="utf-8"></head><body style="font: 13px -apple-system"><h3>Soft Mouse 0.1.11</h3><ul><li>Logi Options+를 설치한 Mac에서 부드러운 스크롤과 마우스 스크롤 반전이 전혀 동작하지 않던 문제를 수정했습니다. Logi Options+가 휠 이벤트를 자체적으로 바꿔 발행하는 것을 인식하도록 했습니다.</li><li>트랙패드와 Magic Mouse는 이전과 동일하게 영향을 받지 않습니다.</li></ul></body></html>]]></description>
+            <enclosure url="https://raw.githubusercontent.com/MFam/soft-mouse-releases/main/SoftMouse-0.1.11.dmg" length="3402650" type="application/octet-stream" sparkle:edSignature="hfxow5O5EXssual0oUEWcathLNYer6bni0uJXoj1Tqj9AVS48Zf+jHfMC1oNKJ79WvHUzL8HZPng76tfW/KpDg=="/>
+            <sparkle:deltas>
+                <enclosure url="https://raw.githubusercontent.com/MFam/soft-mouse-releases/main/SoftMouse12-11.delta" sparkle:deltaFrom="11" length="1230774" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="9yXHBI4gJzWBuKnkzKAqM/Y6oVKP7buOxKCM/p2pICFG0rgFL8paInf2+eBQYZVRSKZ0gF3xyomZf2ij34etAA=="/>
+                <enclosure url="https://raw.githubusercontent.com/MFam/soft-mouse-releases/main/SoftMouse12-10.delta" sparkle:deltaFrom="10" length="1235538" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="X1b/tt2oI5/sQvNApSwJ/MCr+lIxXDFuPYW3JzJtrSmhjRYAzhn4hQG5g/euI1Oy6UeqzkEGttE+aAhj5NoHBA=="/>
+                <enclosure url="https://raw.githubusercontent.com/MFam/soft-mouse-releases/main/SoftMouse12-9.delta" sparkle:deltaFrom="9" length="1244570" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="+3WRBR4+sc/9MDkEvAyFqP7NtcxjxfVWB7OpHl3kDGrTqFHQnVevkEVwpqg7EnbE7PKLEyBAlprFeTRp2bR9Aw=="/>
+                <enclosure url="https://raw.githubusercontent.com/MFam/soft-mouse-releases/main/SoftMouse12-8.delta" sparkle:deltaFrom="8" length="1312398" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="ebl3GfWQ1/N5PWhoi2x2l3iWfDkSEUwsIusS8T9Onw7o+OoESPPHT3NWQyBq5LLnR3i+rEaDHCgwPtHyP2B0Bg=="/>
+                <enclosure url="https://raw.githubusercontent.com/MFam/soft-mouse-releases/main/SoftMouse12-6.delta" sparkle:deltaFrom="6" length="1329038" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="SCvyjZ8DSKK3W9/R2aEJ8Jqi6+U/rnOKNNAKMkOBP7HoNeKgOcSxh/kyYAqSKDWKxuxNp2ZeM60//oea6pxQBA=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.1.10</title>
             <pubDate>Tue, 15 Sep 2026 10:37:33 +0900</pubDate>
             <sparkle:version>11</sparkle:version>
@@ -31,20 +47,6 @@
                 <enclosure url="https://raw.githubusercontent.com/MFam/soft-mouse-releases/main/SoftMouse10-8.delta" sparkle:deltaFrom="8" length="274518" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="85vQW1b/Ecd39b1Mx5ixXgt/U8m4Sdw+rztqkLLvjHsrGnUxEYWi9RKH6Czum7iXf44f2o3TEI/TQpYwy88OAg=="/>
                 <enclosure url="https://raw.githubusercontent.com/MFam/soft-mouse-releases/main/SoftMouse10-6.delta" sparkle:deltaFrom="6" length="311326" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="v91LdmO+hYSUBiaLLI9ZibLLLHZW54SGn0NvkTw5zGMkDQ3ut7YXDILntaoa7SzOz263oE2dskiHU6QCMKO/Cg=="/>
                 <enclosure url="https://raw.githubusercontent.com/MFam/soft-mouse-releases/main/SoftMouse10-5.delta" sparkle:deltaFrom="5" length="319214" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="u9bBrPk39qsHrmuVulug/2fHxossAR+/cRbj2KdKPZDlYtdoBohBg5Pam0t+o2lbVeT6x79I+332w8uaKZAPBQ=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.1.8</title>
-            <pubDate>Thu, 10 Sep 2026 13:50:49 +0900</pubDate>
-            <sparkle:version>9</sparkle:version>
-            <sparkle:shortVersionString>0.1.8</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<!DOCTYPE html><html><head><meta charset="utf-8"></head><body style="font: 13px -apple-system"><h3>Soft Mouse 0.1.8</h3><ul><li><b>마우스별 설정</b>: 설정이 프로필(기본 프로필 + 추가 가능) 단위로 저장되고, 새 "마우스별 설정" 페이지에서 마우스마다 프로필을 배정할 수 있습니다. 블루투스·유선 마우스를 자동으로 인식합니다.</li><li>일반 페이지 상단에서 편집 중인 프로필을 고르고 추가·복제·이름 변경·다른 프로필 가져오기를 할 수 있습니다. 메뉴 막대에는 사용 중인 마우스와 프로필이 표시됩니다.</li><li>앱별 설정에 "이 앱에서 Soft Mouse 사용 안 함" 옵션을 추가했습니다.</li><li>기존 설정은 기본 프로필로 자동 이관됩니다.</li></ul></body></html>]]></description>
-            <enclosure url="https://raw.githubusercontent.com/MFam/soft-mouse-releases/main/SoftMouse-0.1.8.dmg" length="3299084" type="application/octet-stream" sparkle:edSignature="LfCKHUVUcdlQZJvwG+eutIsrFL8zsdZAqJbjHjJiTIffEku1f+2pjOSrGnXEFAIraeJWkQKqbEh4gkjxnBk1AA=="/>
-            <sparkle:deltas>
-                <enclosure url="https://raw.githubusercontent.com/MFam/soft-mouse-releases/main/SoftMouse9-8.delta" sparkle:deltaFrom="8" length="260486" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="76SW9/UPWbEohlwTLL5f2rekbxp63GCUKywJYy2/9REX33jlB6aoiff8YY0+QqUv1FVmF8rnKOGSpIwgZBx6AA=="/>
-                <enclosure url="https://raw.githubusercontent.com/MFam/soft-mouse-releases/main/SoftMouse9-6.delta" sparkle:deltaFrom="6" length="296954" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="sMfEaWsUymQQ3mD1IBjIVj/z1//O/l/X7TuJ2Ngyb4e5daWjHQfrY5BV+5Bmf+ES63swLmNY9/IJ6tqUTMKFDg=="/>
-                <enclosure url="https://raw.githubusercontent.com/MFam/soft-mouse-releases/main/SoftMouse9-5.delta" sparkle:deltaFrom="5" length="304770" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="FA6lFWEnpt+s0kUo8RHYSSXGlk9K8/Dk//QiN6kQiVCJ7rtRPLNVARiPF/v0ZSwBkjNk0Gdmr2rH+9uz2gVeCw=="/>
             </sparkle:deltas>
         </item>
     </channel>
