@@ -3,6 +3,22 @@
     <channel>
         <title>SoftMouse</title>
         <item>
+            <title>0.1.10</title>
+            <pubDate>Tue, 15 Sep 2026 10:37:33 +0900</pubDate>
+            <sparkle:version>11</sparkle:version>
+            <sparkle:shortVersionString>0.1.10</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<!DOCTYPE html><html><head><meta charset="utf-8"></head><body style="font: 13px -apple-system"><h3>Soft Mouse 0.1.10</h3><ul><li>문서 끝에서 스크롤이 한 페이지씩 튕겨 나가던 문제를 수정했습니다. 이제 트랙패드처럼 살짝만 튕기고, 튕긴 뒤 반대 방향 스크롤도 바로 됩니다.</li><li>카카오톡 등 일부 앱에서 관성 스크롤이 미세하게 끊기던 느낌을 개선했습니다.</li><li>설정 창의 튜토리얼 페이지를 정리하고 "처음 설정 안내 다시 보기"를 권한·정보 페이지에 두었습니다.</li></ul></body></html>]]></description>
+            <enclosure url="https://raw.githubusercontent.com/MFam/soft-mouse-releases/main/SoftMouse-0.1.10.dmg" length="3299299" type="application/octet-stream" sparkle:edSignature="UmklSbfPuyWiJLy7ZzTi/cAB7nl0/AuRoL/Q++erjRWDU/wn73aFQCn2KNBryQGixNY6zG6IJHaL7Wd8ArzIAA=="/>
+            <sparkle:deltas>
+                <enclosure url="https://raw.githubusercontent.com/MFam/soft-mouse-releases/main/SoftMouse11-10.delta" sparkle:deltaFrom="10" length="92106" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="asmT4Gal48jB+nBBLkNQPBaXB/1lYJGsn/Y7quG22AkQQAp+IpyHabtFlsjfJaTGME9ZHdKfGRF+OUy7xKmmDQ=="/>
+                <enclosure url="https://raw.githubusercontent.com/MFam/soft-mouse-releases/main/SoftMouse11-9.delta" sparkle:deltaFrom="9" length="128574" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="IseTn4fKCO5huJCpjpKzDE6W+tVQPaacQ/XpAqSWM2EQhCVWwP5NGh+fOm1EQxYSe4Yvd1LB9+AZwFW8cYKBCA=="/>
+                <enclosure url="https://raw.githubusercontent.com/MFam/soft-mouse-releases/main/SoftMouse11-8.delta" sparkle:deltaFrom="8" length="277570" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="ZxZPYXT1LMgecwiIj5ScThrUJNHSI6lefxxrIxqNq5pOK1cpLMlF57SfuBq4Q0aOyXbXTfI2rTZ37Oyh83FGAw=="/>
+                <enclosure url="https://raw.githubusercontent.com/MFam/soft-mouse-releases/main/SoftMouse11-6.delta" sparkle:deltaFrom="6" length="314254" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="a4jOw1Bo2h78RXc2QVkx6hgkzFyqTqp7nU2Fr+XaHXkn1+4GXK34BQvSe6JzuOfEkAUZ1D2GwScvuBtbVXntDg=="/>
+                <enclosure url="https://raw.githubusercontent.com/MFam/soft-mouse-releases/main/SoftMouse11-5.delta" sparkle:deltaFrom="5" length="321742" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="Nr1H0RY+du7sI6sPbfV8+atPEDN5I0v5HR7pjeKt7FoStK8GWI5gFm1EdaQm7yNa9cdECepkZBRBUrEPbMVFCA=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.1.9</title>
             <pubDate>Fri, 11 Sep 2026 13:53:48 +0900</pubDate>
             <sparkle:version>10</sparkle:version>
@@ -29,19 +45,6 @@
                 <enclosure url="https://raw.githubusercontent.com/MFam/soft-mouse-releases/main/SoftMouse9-8.delta" sparkle:deltaFrom="8" length="260486" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="76SW9/UPWbEohlwTLL5f2rekbxp63GCUKywJYy2/9REX33jlB6aoiff8YY0+QqUv1FVmF8rnKOGSpIwgZBx6AA=="/>
                 <enclosure url="https://raw.githubusercontent.com/MFam/soft-mouse-releases/main/SoftMouse9-6.delta" sparkle:deltaFrom="6" length="296954" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="sMfEaWsUymQQ3mD1IBjIVj/z1//O/l/X7TuJ2Ngyb4e5daWjHQfrY5BV+5Bmf+ES63swLmNY9/IJ6tqUTMKFDg=="/>
                 <enclosure url="https://raw.githubusercontent.com/MFam/soft-mouse-releases/main/SoftMouse9-5.delta" sparkle:deltaFrom="5" length="304770" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="FA6lFWEnpt+s0kUo8RHYSSXGlk9K8/Dk//QiN6kQiVCJ7rtRPLNVARiPF/v0ZSwBkjNk0Gdmr2rH+9uz2gVeCw=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.1.7</title>
-            <pubDate>Thu, 10 Sep 2026 09:30:17 +0900</pubDate>
-            <sparkle:version>8</sparkle:version>
-            <sparkle:shortVersionString>0.1.7</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<!DOCTYPE html><html><head><meta charset="utf-8"></head><body style="font: 13px -apple-system"><h3>Soft Mouse 0.1.7</h3><ul><li>줄 단위로 스크롤하는 앱(Android Studio·IntelliJ 터미널 등)에서 휠 한 칸에 수십 줄이 움직이던 문제를 수정했습니다. 부드러운 스크롤 이벤트에 트랙패드와 같은 제스처 정보를 붙입니다.</li><li>새 <b>앱별 설정</b>: 앱마다 휠 스크롤 거리 배율을 정하거나 부드러운 스크롤을 끌 수 있습니다. Android Studio·IntelliJ가 설치되어 있으면 50% 규칙이 미리 추가됩니다.</li><li>부드러운 스크롤을 끈 상태에서 마우스 스크롤 반전이 동작하지 않던 문제를 수정했습니다.</li></ul></body></html>]]></description>
-            <enclosure url="https://raw.githubusercontent.com/MFam/soft-mouse-releases/main/SoftMouse-0.1.7.dmg" length="3174760" type="application/octet-stream" sparkle:edSignature="fKIJmtX+TRpF3SqqeWHALS/+K/0mvMShVzxiPEY/m7trdEsxefRhYVS+KTpScgFhX+qUu07gLejrRIGMaU/yCQ=="/>
-            <sparkle:deltas>
-                <enclosure url="https://raw.githubusercontent.com/MFam/soft-mouse-releases/main/SoftMouse8-6.delta" sparkle:deltaFrom="6" length="158630" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="uojd4/b3siWqNtf0lHfxANQ2EGEbGXjfmu/7AIndAGcLf6X6V3SaOb4iGB6UlRAKInha8rIPM4rRAopVQCxwAg=="/>
-                <enclosure url="https://raw.githubusercontent.com/MFam/soft-mouse-releases/main/SoftMouse8-5.delta" sparkle:deltaFrom="5" length="175690" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="9MtlA3zzfun5HJeH73rNVSOknv3Z2OyU600vw5yh40kCaDIadlZ6Ij/ly52xj88KRypg/2dokNtWo/hBDR7ACQ=="/>
             </sparkle:deltas>
         </item>
     </channel>
