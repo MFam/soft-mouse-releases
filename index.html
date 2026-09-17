@@ -25,9 +25,6 @@
   header { padding: 72px 0 8px; text-align: center; }
   .icon { width: 128px; height: 128px; border-radius: 30px; box-shadow: var(--shadow); }
   h1 { font-size: 44px; letter-spacing: -0.02em; margin: 24px 0 10px; }
-  .cta-row { display: inline-flex; align-items: center; gap: 14px; flex-wrap: wrap; justify-content: center; }
-  .badge { display: inline-flex; align-items: center; gap: 6px; padding: 8px 14px; border-radius: 999px;
-    font-size: 14px; font-weight: 600; color: var(--muted); background: var(--card); border: 1px solid var(--line); }
   .tagline { font-size: 20px; color: var(--muted); margin: 0 auto 28px; max-width: 620px; }
   .cta { display: inline-flex; align-items: center; gap: 10px; background: var(--accent); color: #fff; text-decoration: none;
     font-weight: 700; font-size: 18px; padding: 16px 30px; border-radius: 14px; box-shadow: 0 8px 24px rgba(61,125,247,.35); transition: transform .15s, box-shadow .15s; }
@@ -58,7 +55,8 @@
   /* ---- features ---- */
   section.features { padding: 96px 0 24px; }
   h2 { text-align: center; font-size: 30px; letter-spacing: -0.02em; margin: 0 0 8px; }
-  .sub { text-align: center; color: var(--muted); margin: 0 0 36px; }
+  h2 { margin-bottom: 36px; }
+  .subhead { text-align: center; font-size: 22px; letter-spacing: -0.01em; margin: 0 0 22px; color: var(--text); }
   .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
   .card { background: var(--card); border: 1px solid var(--line); border-radius: 18px; box-shadow: var(--shadow); padding: 20px 20px 22px; }
   .anim { height: 130px; border-radius: 12px; background: var(--bg); display: flex; align-items: center; justify-content: center; overflow: hidden; margin-bottom: 16px; }
@@ -132,19 +130,15 @@
     <img class="icon" src="assets/icon.png" alt="Soft Mouse 아이콘" width="128" height="128">
     <h1>Soft Mouse</h1>
     <p class="tagline">마우스 휠을 트랙패드처럼 부드럽게. 마우스와 트랙패드의 스크롤 방향은 따로.</p>
-    <div class="cta-row">
     <a class="cta" id="download" href="https://raw.githubusercontent.com/MFam/soft-mouse-releases/main/SoftMouse-0.1.11.dmg">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M6 11l6 6 6-6M4 21h16"/></svg>
-      다운로드
+      macOS 전용 다운로드
     </a>
-      <span class="badge"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M16.4 12.9c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.8-3.5.8-.7 0-1.9-.8-3.1-.8-1.6 0-3.1.9-3.9 2.4-1.7 2.9-.4 7.2 1.2 9.6.8 1.2 1.8 2.5 3 2.4 1.2 0 1.7-.8 3.1-.8 1.5 0 1.9.8 3.1.8 1.3 0 2.1-1.2 2.9-2.4.9-1.3 1.3-2.6 1.3-2.7-.1 0-2.7-1-2.7-4zM14.1 5.9c.6-.8 1.1-1.9 1-3-.9 0-2.1.6-2.7 1.4-.6.7-1.1 1.8-1 2.9 1 .1 2.1-.5 2.7-1.3z"/></svg>macOS 전용</span>
-    </div>
 
   </header>
 
   <section class="features">
     <h2>기능</h2>
-    <p class="sub">메뉴 막대에서 켜고 끄는 여섯 가지</p>
     <div class="demo">
       <div class="pane step">
         <h3><span class="dot"></span>일반 휠 마우스</h3>
@@ -162,6 +156,7 @@
       </div>
     </div>
     <p class="caption">Soft Mouse를 켜면 일반 휠 마우스로도 트랙패드와 같은 스크롤 움직임을 얻습니다.</p>
+    <h3 class="subhead">그 밖의 기능</h3>
     <div class="grid">
 
       <div class="card">
