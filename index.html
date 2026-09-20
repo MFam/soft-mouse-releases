@@ -37,19 +37,7 @@
   .pane h3 { margin: 0 0 10px; font-size: 15px; color: var(--muted); font-weight: 600; display: flex; align-items: center; gap: 8px; }
   .pane h3 .dot { width: 8px; height: 8px; border-radius: 50%; background: #c4ccdd; }
   .pane.soft h3 .dot { background: var(--accent); }
-  .viewport { height: 220px; overflow: hidden; border-radius: 12px; background: var(--bg); position: relative; }
-  .doc { position: absolute; left: 0; right: 0; top: 0; padding: 14px; }
-  .doc p { height: 10px; border-radius: 5px; background: var(--line); margin: 0 0 12px; }
-  .doc p:nth-child(3n) { width: 70%; } .doc p:nth-child(4n) { width: 85%; } .doc p:nth-child(5n+1) { width: 55%; }
-  .doc p.h { height: 16px; width: 40%; background: rgba(61,125,247,.35); margin-bottom: 16px; }
-  /* 두 창 모두 6칸(각 90px)을 4.2초에 내려가고 되돌아온다. 하나는 칸 단위로 뚝뚝, 하나는 미끄러지듯. */
-  @keyframes scroll { 0% { transform: translateY(0); } 78% { transform: translateY(-540px); } 88%, 100% { transform: translateY(-540px); } }
-  .step .doc { animation: scroll 4.2s steps(6, end) infinite; }
-  .soft .doc { animation: scroll 4.2s cubic-bezier(.22,.61,.36,1) infinite; }
-  .wheel { position: absolute; right: 12px; top: 12px; width: 26px; height: 42px; border-radius: 13px; border: 2px solid var(--muted); opacity: .6; }
-  .wheel::after { content: ""; position: absolute; left: 50%; top: 7px; width: 4px; height: 10px; margin-left: -2px; border-radius: 2px; background: var(--muted);
-    animation: notch 4.2s steps(6, end) infinite; }
-  @keyframes notch { 0% { transform: translateY(0); } 78% { transform: translateY(18px); } 100% { transform: translateY(18px); } }
+  .clip { display: block; width: 100%; aspect-ratio: 506 / 792; max-height: 520px; object-fit: cover; border-radius: 12px; background: var(--bg); }
   .caption { text-align: center; color: var(--muted); font-size: 15px; margin: 16px 0 84px; }
 
   /* ---- features ---- */
@@ -142,17 +130,15 @@
     <div class="demo">
       <div class="pane step">
         <h3><span class="dot"></span>일반 휠 마우스</h3>
-        <div class="viewport">
-          <div class="doc"><p class="h"></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p></div>
-          <div class="wheel"></div>
-        </div>
+        <video class="clip" autoplay loop muted playsinline preload="metadata" poster="assets/demo-off-poster.jpg">
+          <source src="assets/demo-off.mp4" type="video/mp4">
+        </video>
       </div>
       <div class="pane soft">
         <h3><span class="dot"></span>Soft Mouse</h3>
-        <div class="viewport">
-          <div class="doc"><p class="h"></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p></div>
-          <div class="wheel"></div>
-        </div>
+        <video class="clip" autoplay loop muted playsinline preload="metadata" poster="assets/demo-on-poster.jpg">
+          <source src="assets/demo-on.mp4" type="video/mp4">
+        </video>
       </div>
     </div>
     <p class="caption">Soft Mouse를 켜면 일반 휠 마우스로도 트랙패드와 같은 스크롤 움직임을 얻습니다.</p>
