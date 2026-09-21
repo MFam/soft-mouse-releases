@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Soft Mouse — Support</title>
+<meta name="description" content="Soft Mouse makes mouse-wheel scrolling on macOS as smooth as a trackpad and lets the mouse and trackpad scroll in different directions. Support and contact.">
+<link rel="icon" href="assets/icon-256.png">
+<style>
+  :root {
+    --bg: #f6f8fc; --card: #ffffff; --text: #16213a; --muted: #5b6784;
+    --accent: #3d7df7; --accent-2: #6fb9ff; --line: rgba(22,33,58,.08);
+    --shadow: 0 10px 30px rgba(22,33,58,.08);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0f1420; --card: #171d2c; --text: #eef2fb; --muted: #97a3c2; --line: rgba(255,255,255,.08); --shadow: 0 10px 30px rgba(0,0,0,.4); }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--bg); color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.55; }
+  a { color: inherit; }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
+
+  /* ---- hero ---- */
+  header { padding: 72px 0 8px; text-align: center; }
+  .icon { width: 128px; height: 128px; border-radius: 30px; box-shadow: var(--shadow); }
+  h1 { font-size: 44px; letter-spacing: -0.02em; margin: 24px 0 10px; }
+  .tagline { font-size: 20px; color: var(--muted); margin: 0 auto 28px; max-width: 620px; }
+
+  /* ---- demo compare ---- */
+  .demo { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 0 auto; }
+  .pane { background: var(--card); border: 1px solid var(--line); border-radius: 18px; box-shadow: var(--shadow); padding: 16px 16px 12px; }
+  .pane h3 { margin: 0 0 10px; font-size: 15px; color: var(--muted); font-weight: 600; display: flex; align-items: center; gap: 8px; }
+  .pane h3 .dot { width: 8px; height: 8px; border-radius: 50%; background: #c4ccdd; }
+  .pane.soft h3 .dot { background: var(--accent); }
+  .clip { display: block; width: 100%; aspect-ratio: 506 / 792; max-height: 520px; object-fit: cover; border-radius: 12px; background: var(--bg); }
+  .caption { text-align: center; color: var(--muted); font-size: 15px; margin: 16px 0 84px; }
+
+  /* ---- features ---- */
+  section.features { padding: 64px 0 24px; }
+  h2 { text-align: center; font-size: 30px; letter-spacing: -0.02em; margin: 0 0 36px; }
+  .subhead { text-align: center; font-size: 22px; letter-spacing: -0.01em; margin: 0 0 22px; color: var(--text); }
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 18px; box-shadow: var(--shadow); padding: 20px 20px 22px; }
+  .anim { height: 130px; border-radius: 12px; background: var(--bg); display: flex; align-items: center; justify-content: center; overflow: hidden; margin-bottom: 16px; }
+  .anim svg { width: 100%; height: 100%; }
+  .card h3 { margin: 0 0 6px; font-size: 18px; }
+  .card p { margin: 0; color: var(--muted); font-size: 15px; }
+
+  /* shared SVG styles */
+  .ink { fill: none; stroke: var(--text); stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+  .fill { fill: var(--text); }
+  .acc { fill: var(--accent); } .acc-ink { stroke: var(--accent); }
+  .soft-fill { fill: var(--line); }
+
+  /* 1 separate directions: trackpad arrow goes up, mouse arrow goes down */
+  @keyframes upFade { 0% { transform: translateY(14px); opacity: 0; } 30% { opacity: 1; } 100% { transform: translateY(-14px); opacity: 0; } }
+  @keyframes downFade { 0% { transform: translateY(-14px); opacity: 0; } 30% { opacity: 1; } 100% { transform: translateY(14px); opacity: 0; } }
+  .arrow-up { animation: upFade 1.6s ease-in-out infinite; } .arrow-down { animation: downFade 1.6s ease-in-out infinite; }
+
+  /* 2 smooth scrolling: a small list glides */
+  @keyframes glide { 0% { transform: translateY(0); } 80% { transform: translateY(-48px); } 100% { transform: translateY(-48px); } }
+  .glide { animation: glide 2.4s cubic-bezier(.22,.61,.36,1) infinite; }
+
+  /* 3 per-mouse profiles: profile tags light up in turn */
+  @keyframes blinkA { 0%, 45% { opacity: 1; } 50%, 95% { opacity: .25; } 100% { opacity: 1; } }
+  @keyframes blinkB { 0%, 45% { opacity: .25; } 50%, 95% { opacity: 1; } 100% { opacity: .25; } }
+  .tagA { animation: blinkA 3s ease infinite; } .tagB { animation: blinkB 3s ease infinite; }
+
+  /* 4 per-app settings: toggles flip one after another */
+  @keyframes knob1 { 0%, 20% { transform: translateX(0); } 30%, 100% { transform: translateX(14px); } }
+  @keyframes knob2 { 0%, 45% { transform: translateX(0); } 55%, 100% { transform: translateX(14px); } }
+  @keyframes knob3 { 0%, 70% { transform: translateX(14px); } 80%, 100% { transform: translateX(0); } }
+  @keyframes track1 { 0%, 20% { fill: #c4ccdd; } 30%, 100% { fill: var(--accent); } }
+  @keyframes track2 { 0%, 45% { fill: #c4ccdd; } 55%, 100% { fill: var(--accent); } }
+  @keyframes track3 { 0%, 70% { fill: var(--accent); } 80%, 100% { fill: #c4ccdd; } }
+  .k1 { animation: knob1 3.6s ease infinite; } .k2 { animation: knob2 3.6s ease infinite; } .k3 { animation: knob3 3.6s ease infinite; }
+  .t1 { animation: track1 3.6s ease infinite; } .t2 { animation: track2 3.6s ease infinite; } .t3 { animation: track3 3.6s ease infinite; }
+
+  /* 5 cursor effects: the cursor traces a figure eight with a trail */
+  .orbit { offset-path: path("M40,65 C60,25 100,25 120,65 C140,105 180,105 200,65 C180,25 140,25 120,65 C100,105 60,105 40,65 Z"); offset-rotate: 0deg;
+    animation: orbit 3.2s linear infinite; }
+  @keyframes orbit { to { offset-distance: 100%; } }
+  .trail { offset-path: path("M40,65 C60,25 100,25 120,65 C140,105 180,105 200,65 C180,25 140,25 120,65 C100,105 60,105 40,65 Z"); offset-rotate: 0deg;
+    animation: orbit 3.2s linear infinite; }
+  .trail:nth-child(1) { animation-delay: -.08s; opacity: .55; } .trail:nth-child(2) { animation-delay: -.16s; opacity: .4; }
+  .trail:nth-child(3) { animation-delay: -.24s; opacity: .28; } .trail:nth-child(4) { animation-delay: -.32s; opacity: .18; } .trail:nth-child(5) { animation-delay: -.4s; opacity: .1; }
+
+  /* 6 pointer speed: the slider knob moves right and the cursor sweeps faster */
+  @keyframes knobSpeed { 0%, 15% { transform: translateX(0); } 45%, 100% { transform: translateX(70px); } }
+  @keyframes fillSpeed { 0%, 15% { width: 0; } 45%, 100% { width: 70px; } }
+  @keyframes sweepSlow { 0% { transform: translateX(0); } 45% { transform: translateX(40px); } 46% { transform: translateX(0); } 100% { transform: translateX(120px); } }
+  .kspeed { animation: knobSpeed 3.6s ease-in-out infinite; }
+  .fspeed { animation: fillSpeed 3.6s ease-in-out infinite; }
+  .sweep { animation: sweepSlow 3.6s linear infinite; }
+
+  /* ---- support ---- */
+  section.support { padding: 72px 0 24px; }
+  .support .card { max-width: 720px; margin: 0 auto; }
+  .support h3 { margin: 0 0 8px; font-size: 18px; }
+  .support p { margin: 0 0 14px; color: var(--muted); font-size: 15px; }
+  .support p:last-child { margin-bottom: 0; }
+  .support a { color: var(--accent); }
+  .support ol { margin: 0 0 14px; padding-left: 22px; color: var(--muted); font-size: 15px; }
+  .support li { margin: 4px 0; }
+
+  footer { text-align: center; color: var(--muted); font-size: 13px; padding: 40px 0 56px; }
+  footer a { color: var(--muted); }
+
+  @media (max-width: 760px) {
+    h1 { font-size: 34px; } .tagline { font-size: 17px; }
+    .demo { grid-template-columns: 1fr; } .grid { grid-template-columns: 1fr; }
+    header { padding-top: 48px; }
+  }
+  @media (prefers-reduced-motion: reduce) { * { animation-duration: 0.001s !important; animation-iteration-count: 1 !important; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <img class="icon" src="assets/icon.png" alt="Soft Mouse icon" width="128" height="128">
+    <h1>Soft Mouse</h1>
+    <p class="tagline">Mouse-wheel scrolling as smooth as a trackpad. Separate scroll directions for mouse and trackpad.</p>
+  </header>
+
+  <section class="features">
+    <h2>Features</h2>
+    <div class="demo">
+      <div class="pane step">
+        <h3><span class="dot"></span>Regular wheel mouse</h3>
+        <video class="clip" autoplay loop muted playsinline preload="metadata" poster="assets/demo-off-poster.jpg">
+          <source src="assets/demo-off.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="pane soft">
+        <h3><span class="dot"></span>Soft Mouse</h3>
+        <video class="clip" autoplay loop muted playsinline preload="metadata" poster="assets/demo-on-poster.jpg">
+          <source src="assets/demo-on.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+    <p class="caption">With Soft Mouse on, a regular wheel mouse scrolls with the same fluid motion as a trackpad.</p>
+    <h3 class="subhead">More features</h3>
+    <div class="grid">
+
+      <div class="card">
+        <div class="anim"><svg viewBox="0 0 240 130">
+          <!-- trackpad -->
+          <rect class="ink" x="30" y="35" width="70" height="60" rx="10"/>
+          <line class="ink" x1="65" y1="52" x2="65" y2="78" opacity=".2"/>
+          <g class="arrow-up"><path class="ink acc-ink" d="M65 78 V54 M56 63 L65 54 L74 63"/></g>
+          <!-- mouse -->
+          <rect class="ink" x="150" y="30" width="46" height="72" rx="23"/>
+          <rect class="acc" x="170" y="42" width="6" height="14" rx="3"/>
+          <g class="arrow-down"><path class="ink acc-ink" d="M173 66 V90 M164 81 L173 90 L182 81"/></g>
+          <text x="65" y="118" text-anchor="middle" font-size="11" fill="currentColor" opacity=".55">Trackpad</text>
+          <text x="173" y="118" text-anchor="middle" font-size="11" fill="currentColor" opacity=".55">Mouse</text>
+        </svg></div>
+        <h3>Separate scroll directions</h3>
+        <p>Natural scrolling on the trackpad, reversed on the mouse wheel. The one thing macOS won't let you do.</p>
+      </div>
+
+      <div class="card">
+        <div class="anim"><svg viewBox="0 0 240 130">
+          <rect class="ink" x="60" y="18" width="120" height="94" rx="10"/>
+          <clipPath id="clip2"><rect x="62" y="20" width="116" height="90" rx="9"/></clipPath>
+          <g clip-path="url(#clip2)"><g class="glide">
+            <rect class="acc" x="76" y="30" width="50" height="7" rx="3.5" opacity=".7"/>
+            <rect class="soft-fill" x="76" y="46" width="88" height="6" rx="3"/><rect class="soft-fill" x="76" y="58" width="70" height="6" rx="3"/>
+            <rect class="soft-fill" x="76" y="70" width="84" height="6" rx="3"/><rect class="soft-fill" x="76" y="82" width="60" height="6" rx="3"/>
+            <rect class="soft-fill" x="76" y="94" width="88" height="6" rx="3"/><rect class="soft-fill" x="76" y="106" width="76" height="6" rx="3"/>
+            <rect class="soft-fill" x="76" y="118" width="84" height="6" rx="3"/><rect class="soft-fill" x="76" y="130" width="64" height="6" rx="3"/>
+            <rect class="soft-fill" x="76" y="142" width="88" height="6" rx="3"/><rect class="soft-fill" x="76" y="154" width="70" height="6" rx="3"/>
+          </g></g>
+          <!-- scrollbar -->
+          <rect class="soft-fill" x="170" y="24" width="4" height="82" rx="2"/>
+          <rect class="acc" x="170" y="26" width="4" height="22" rx="2" style="animation: glideThumb 2.4s cubic-bezier(.22,.61,.36,1) infinite"/>
+          <style>@keyframes glideThumb { 0% { transform: translateY(0); } 80% { transform: translateY(26px); } 100% { transform: translateY(26px); } }</style>
+        </svg></div>
+        <h3>Smooth scrolling</h3>
+        <p>Turns each wheel notch into a glide. Adjust the distance and smoothness to taste.</p>
+      </div>
+
+      <div class="card">
+        <div class="anim"><svg viewBox="0 0 240 130">
+          <g class="tagA">
+            <rect class="acc" x="42" y="22" width="60" height="20" rx="10"/>
+            <text x="72" y="36" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">Profile A</text>
+          </g>
+          <g class="tagB">
+            <rect class="acc" x="138" y="22" width="60" height="20" rx="10"/>
+            <text x="168" y="36" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">Profile B</text>
+          </g>
+          <rect class="ink" x="52" y="56" width="40" height="60" rx="20"/><rect class="fill" x="69" y="66" width="6" height="12" rx="3" opacity=".5"/>
+          <rect class="ink" x="148" y="52" width="40" height="64" rx="20"/><rect class="fill" x="165" y="62" width="6" height="14" rx="3" opacity=".5"/>
+        </svg></div>
+        <h3>Per-mouse profiles</h3>
+        <p>Your work mouse and home mouse each keep their own settings. Connected mice are recognized automatically.</p>
+      </div>
+
+      <div class="card">
+        <div class="anim"><svg viewBox="0 0 240 130">
+          <g transform="translate(0,4)">
+            <rect class="soft-fill" x="46" y="20" width="26" height="26" rx="7"/><rect class="acc" x="52" y="26" width="14" height="14" rx="4" opacity=".6"/>
+            <rect class="t1" x="150" y="25" width="36" height="16" rx="8" fill="#c4ccdd"/><circle class="k1" cx="158" cy="33" r="6" fill="#fff"/>
+            <rect class="soft-fill" x="46" y="56" width="26" height="26" rx="7"/><circle class="acc" cx="59" cy="69" r="7" opacity=".6"/>
+            <rect class="t2" x="150" y="61" width="36" height="16" rx="8" fill="#c4ccdd"/><circle class="k2" cx="158" cy="69" r="6" fill="#fff"/>
+            <rect class="soft-fill" x="46" y="92" width="26" height="26" rx="7"/><path class="acc" d="M52 111 L59 98 L66 111 Z" opacity=".6"/>
+            <rect class="t3" x="150" y="97" width="36" height="16" rx="8" fill="#c4ccdd"/><circle class="k3" cx="158" cy="105" r="6" fill="#fff"/>
+            <rect class="soft-fill" x="84" y="30" width="48" height="6" rx="3"/><rect class="soft-fill" x="84" y="66" width="40" height="6" rx="3"/><rect class="soft-fill" x="84" y="102" width="52" height="6" rx="3"/>
+          </g>
+        </svg></div>
+        <h3>Per-app settings</h3>
+        <p>Native scrolling in the terminal, smooth in the browser. Turn Soft Mouse off or change the distance per app.</p>
+      </div>
+
+      <div class="card">
+        <div class="anim"><svg viewBox="0 0 240 130">
+          <g><circle class="trail acc" r="4"/><circle class="trail acc" r="3.5"/><circle class="trail acc" r="3"/><circle class="trail acc" r="2.5"/><circle class="trail acc" r="2"/></g>
+          <g class="orbit"><path class="fill" d="M0 -6 L0 10 L4 6.5 L7 12.5 L9.5 11.3 L6.5 5.3 L11 5 Z" stroke="#fff" stroke-width="1.2" stroke-linejoin="round"/></g>
+        </svg></div>
+        <h3>Cursor effects</h3>
+        <p>A comet tail, sparkles, confetti, or a clownfish, tabby cat or shiba following your cursor. You'll never lose it again.</p>
+      </div>
+
+      <div class="card">
+        <div class="anim"><svg viewBox="0 0 240 130">
+          <!-- slider -->
+          <rect class="soft-fill" x="60" y="92" width="120" height="8" rx="4"/>
+          <rect class="fspeed acc" x="60" y="92" height="8" rx="4"/>
+          <g class="kspeed"><circle cx="85" cy="96" r="9" fill="#fff" stroke="var(--accent)" stroke-width="2.4"/></g>
+          <text x="60" y="118" font-size="11" fill="currentColor" opacity=".5">Slow</text>
+          <text x="180" y="118" text-anchor="end" font-size="11" fill="currentColor" opacity=".5">Fast</text>
+          <!-- cursor sweeping across -->
+          <g class="sweep"><path class="fill" d="M60 30 L60 50 L65 45.5 L69 53 L72 51.5 L68 44 L74 43.5 Z" stroke="#fff" stroke-width="1.2" stroke-linejoin="round"/></g>
+          <line class="ink" x1="60" y1="66" x2="180" y2="66" opacity=".15" stroke-dasharray="3 5"/>
+        </svg></div>
+        <h3>Mouse pointer speed</h3>
+        <p>A wider speed range than System Settings, applied to the mouse only. The trackpad keeps its own speed.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="support" id="support">
+    <h2>Support</h2>
+    <div class="card">
+      <h3>Getting started</h3>
+      <ol>
+        <li>Open Soft Mouse. It lives in the menu bar and walks you through setup on first launch.</li>
+        <li>Grant the Accessibility permission in System Settings › Privacy &amp; Security › Accessibility. macOS requires it to smooth and redirect scroll-wheel events. Soft Mouse uses it for mouse-wheel events only.</li>
+        <li>Scroll with your mouse. Fine-tune direction, distance, smoothness and pointer speed from the menu bar panel or the settings window.</li>
+      </ol>
+      <h3>Soft Mouse doesn't appear in the Accessibility list?</h3>
+      <p>Click the + button under the list and choose Soft Mouse from your Applications folder. Or use the "Show in Finder" button in the app's Permission page and drag the app into the list.</p>
+      <h3>Privacy</h3>
+      <p>Soft Mouse collects no data and never connects to the internet. Read the <a href="privacy.html">privacy policy</a>.</p>
+      <h3>Contact</h3>
+      <p>Questions, bug reports and feature requests: <a href="mailto:cozycat-studio@naver.com">cozycat-studio@naver.com</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Cozycat Studio · e-mail: <a href="mailto:cozycat-studio@naver.com">cozycat-studio@naver.com</a> · <a href="privacy.html">Privacy Policy</a></p>
+  </footer>
+</div>
+</body>
+</html>
