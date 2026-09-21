@@ -8,7 +8,7 @@
             <sparkle:version>13</sparkle:version>
             <sparkle:shortVersionString>0.1.12</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<!DOCTYPE html><html><head><meta charset="utf-8"></head><body style="font: 13px -apple-system"><ul><li>휠 가속 무시: 휠을 빠르게 돌려도 한 칸당 이동 거리가 항상 같습니다. macOS와 Logi Options+ 등 드라이버가 붙이는 가속 때문에 스크롤이 튀던 문제를 고쳤습니다.</li><li>무한 스크롤(프리 스핀) 휠로 끝까지 내려도 페이지가 화면 밖으로 밀리지 않고 끝에서 멈춥니다.</li></ul></body></html>]]></description>
+            <description><![CDATA[<!DOCTYPE html><html><head><meta charset="utf-8"></head><body style="font: 13px -apple-system"><h3>Soft Mouse 0.1.12</h3><ul><li>휠 가속 무시: 휠을 빠르게 돌려도 한 칸당 이동 거리가 항상 같습니다. macOS와 Logi Options+ 등 드라이버가 붙이는 가속 때문에 스크롤이 튀던 문제를 고쳤습니다.</li><li>무한 스크롤(프리 스핀) 휠로 끝까지 내려도 페이지가 화면 밖으로 밀리지 않고 끝에서 멈춥니다.</li></ul></body></html>]]></description>
             <enclosure url="https://raw.githubusercontent.com/MFam/soft-mouse-releases/main/SoftMouse-0.1.12.dmg" length="3391921" type="application/octet-stream" sparkle:edSignature="aRPFNlWZHT0xOaIQ0ycii5SgI5gd2SLX9C0B6p5Bn3d+frqWXj+9NaJntq3ifOH0JzlMMBsFgzzpynN4zS2sBw=="/>
             <sparkle:deltas>
                 <enclosure url="https://raw.githubusercontent.com/MFam/soft-mouse-releases/main/SoftMouse13-12.delta" sparkle:deltaFrom="12" length="461598" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="HSWYdpSJfYrYMGPFumd0QHvOrAycx/h5Nloagr57wYYhty9YkVE9aTPJsJgCGtFo4av+gO0RLAFcxUB7pturAQ=="/>
